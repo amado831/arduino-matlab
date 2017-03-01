@@ -13,6 +13,7 @@ you start MATLAB from with the following line in it:
 -Dgnu.io.rxtx.SerialPorts=/dev/ttyS0:/dev/ttyS1:/dev/USB0:/dev/ttyACM0
 
 After you restart MATLAB, the port should be found:
+
 >> instrhwinfo('serial')
 ans =
        AvailableSerialPorts: {2x1 cell}
