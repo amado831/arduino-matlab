@@ -6,8 +6,12 @@ https://www.mathworks.com/matlabcentral/answers/25323-using-serial-to-connect-to
 
 The solution is pasted below
 
-You can use /dev/ttyACM0 but you need to let the library know that you will be using it. To specify the ports on your system, create a java.opts file in the directory you start MATLAB from with the following line in it:
+You can use /dev/ttyACM0 but you need to let the library know that you will be using it. 
+To specify the ports on your system, create a java.opts file in the directory 
+you start MATLAB from with the following line in it:
+
 -Dgnu.io.rxtx.SerialPorts=/dev/ttyS0:/dev/ttyS1:/dev/USB0:/dev/ttyACM0
+
 After you restart MATLAB, the port should be found:
 >> instrhwinfo('serial')
 ans =
