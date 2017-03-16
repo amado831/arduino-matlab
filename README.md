@@ -30,3 +30,6 @@ ans =
 
 Another option is to create a symbolic link from /dev/ttyS101 to 
 /dev/ttyACM0. The port should be enumerated as ttyS101 then.
+
+You may also need to change permissions or add yourself to the dialout group to access /dev/ttyACM0. Instructions are provided hereL
+https://www.arduino.cc/en/Guide/Linux
